@@ -1,0 +1,18 @@
+{
+  "name": "mini-portfolio",
+  "version": "1.0.0",
+  "description": "- Responsive mini portfolio website Using HTML CSS & JavaScript\n- Contains animations CSS.\n- Includes light mode and dark mode.\n- Developed first with the Mobile First methodology, then for desktop.\n- Compatible with all mobile devices and with a beautiful and pleasant user interface.",
+  "main": "script.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./styles.css --minify",
+    "watch": "tailwindcss -i ./input.css -o ./styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.3"
+  }
+}
