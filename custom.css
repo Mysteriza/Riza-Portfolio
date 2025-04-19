@@ -52,29 +52,6 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-100%); }
 }
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000; /* Naikin z-index */
-    background: #3b82f6;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex; /* Pastikan flex */
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    font-size: 20px; /* Besarin ikon */
-}
-.back-to-top:hover {
-    background: #2563eb;
-    transform: translateY(-3px);
-}
 
 /* Skills Grid */
 .skills-grid {

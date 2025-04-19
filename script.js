@@ -59,10 +59,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
 
-    if (anchor.id === "back-to-top") {
-      return;
-    }
-
     // Handle tab buttons
     if (href === "#projects-tab") {
       e.preventDefault();
@@ -84,41 +80,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     if (targetElement) {
       e.preventDefault();
+
       window.scrollTo({
         top: targetElement.offsetTop - 80,
         behavior: "smooth",
       });
+
+      // Close mobile menu if open
       if (!mobileMenu.classList.contains("hidden")) {
         mobileMenu.classList.add("hidden");
       }
     }
   });
 });
-
-// Back to Top Button
-const backToTopButton = document.getElementById("back-to-top");
-
-if (!backToTopButton) {
-  console.error("Back to Top button not found!");
-} else {
-  window.addEventListener("scroll", () => {
-    console.log("Scroll position:", window.pageYOffset);
-    if (window.pageYOffset > 300) {
-      backToTopButton.style.display = "flex";
-      console.log("Show Back to Top");
-    } else {
-      backToTopButton.style.display = "none";
-      console.log("Hide Back to Top");
-    }
-  });
-
-  backToTopButton.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-}
 
 // Set current year in footer
 document.getElementById("current-year").textContent = new Date().getFullYear();
