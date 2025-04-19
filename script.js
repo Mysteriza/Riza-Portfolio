@@ -95,8 +95,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Back to Top Button
-const backToTopButton = document.getElementById("back-to-top");
-
+const backToTopButton = document.querySelector(".back-to-top");
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 300) {
     backToTopButton.classList.remove("hidden");

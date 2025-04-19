@@ -4,8 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rifqi Fachriza | Portfolio</title>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="img/RifqiVectorized.ico">
+        <script>
+          function loadFontAwesome() {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+            document.head.appendChild(link);
+          }
+          window.addEventListener('load', loadFontAwesome);
+        </script>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="custom.css">
     </head>
@@ -55,7 +63,8 @@
                     <a href="#contact"
                         class="text-gray-300 hover:text-blue-400 transition">Contact</a>
                 </nav>
-                <button id="mobile-menu-button" class="md:hidden text-gray-300">
+                <button id="mobile-menu-button" class="md:hidden text-gray-300"
+                    aria-label="Toggle mobile menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -113,7 +122,7 @@
                             class="absolute inset-4 bg-blue-400 rounded-full opacity-20"></div>
                         <div
                             class="relative rounded-full w-full h-full bg-gray-700 border-4 border-gray-800 shadow-xl floating overflow-hidden">
-                            <img src="img/Rifqi Vectorized.webp"
+                            <img src="img/RifqiVectorized.webp"
                                 alt="Profile Photo"
                                 class="profile-photo">
                             class="w-full h-full object-cover">
@@ -913,31 +922,36 @@
                                         <a
                                             href="https://www.linkedin.com/in/rifqifachrizasukmana/"
                                             target="_blank"
-                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center"
+                                            aria-label="Visit my LinkedIn profile">
                                             <i class="fab fa-linkedin-in"></i>
                                         </a>
                                         <a
                                             href="https://www.instagram.com/mysteriza/"
                                             target="_blank"
-                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center"
+                                            aria-label="Visit my Instagram profile">
                                             <i class="fab fa-instagram"></i>
                                         </a>
                                         <a
                                             href="https://www.youtube.com/@Mysteriza"
                                             target="_blank"
-                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center"
+                                            aria-label="Visit my YouTube channel">
                                             <i class="fab fa-youtube"></i>
                                         </a>
                                         <a href="https://t.me/mysteriza"
                                             target="_blank"
-                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center"
+                                            aria-label="Contact me on Telegram">
                                             <i
                                                 class="fab fa-telegram-plane"></i>
                                         </a>
                                         <a
                                             href="https://discord.com/users/Mysteriza#8017"
                                             target="_blank"
-                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-100 transition">
+                                            class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center"
+                                            aria-label="Join my Discord server">
                                             <i class="fab fa-discord"></i>
                                         </a>
                                     </div>
@@ -968,14 +982,15 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="bg-gray-900 text-gray-400 py-8 px-6">
             <div class="container mx-auto text-center">
-                <a href="#"
-                    <p class="mt-2">© <span id="current-year"></span> Mysteriza.
-                    All
+                <p class="mt-2">© <span id="current-year"></span> Mysteriza. All
                     rights reserved.</p>
                 <p class="mt-2 text-xs">Built with security in mind</p>
+                <a href="#" id="back-to-top" class="back-to-top"
+                    aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
             </div>
         </footer>
 
