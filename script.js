@@ -56,6 +56,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (tab) {
         e.preventDefault();
         document.getElementById(tab.buttonId).click(); // Trigger tab click
+        // Close mobile menu if open
+        if (!mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
+        }
         return;
       }
 
