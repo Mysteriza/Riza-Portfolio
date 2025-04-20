@@ -3,54 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Mysteriza - Creative Portfolio">
+        <meta property="og:description"
+            content="Explore the creative portfolio of Mysteriza, showcasing projects, skills, and a unique digital experience.">
+        <meta property="og:image" content="/img/thumbnail.webp">
+        <meta property="og:url" content="https://mysteriza.my.id">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mysteriza - Creative Portfolio">
+        <meta name="twitter:description"
+            content="Explore the creative portfolio of Mysteriza, showcasing projects, skills, and a unique digital experience.">
+        <meta name="twitter:image" content="/img/thumbnail.webp">
+
         <title>Rifqi Fachriza | Portfolio</title>
         <link rel="icon" type="image/x-icon" href="img/RifqiVectorized.ico">
-        <script>
-            function loadFontAwesome() {
-              const link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css';
-              document.head.appendChild(link);
-            }
-            window.addEventListener('load', loadFontAwesome);
-          </script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="custom.css">
     </head>
 
     <body class="bg-gray-900 font-sans text-gray-100">
-        <!-- Matrix Background -->
-        <div class="matrix-bg">
-            <div class="matrix-code">
-                01001000 01101001 00100000 01001001 00100111 01101101 00100000
-                01100001 00100000 01010100 01100101 01100011 01101000 01101110
-                01101111 01110000 01101000 01101001 01101100 01100101 00100000
-                00100010 01001000 01100001 01100011 01101011 01100101 01110010
-                00100010 00001010 01010011 01100101 01100011 01110101 01110010
-                01101001 01110100 01111001 00100000 01000101 01101110 01110100
-                01101000 01110101 01110011 01101001 01100001 01110011 01110100
-                00100000 01100001 01101110 01100100 00100000 01001001 01101111
-                01010100 00100000 01000100 01100101 01110110 01100101 01101100
-                01101111 01110000 01100101 01110010 00001010 01010000 01110010
-                01101001 01110110 01100001 01100011 01111001 00100000 01000001
-                01100100 01110110 01101111 01100011 01100001 01110100 01100101
-                00100000 01100001 01101110 01100100 00100000 01000101 01110100
-                01101000 01101001 01100011 01100001 01101100 00100000 01001000
-                01100001 01100011 01101011 01100101 01110010 00001010
-            </div>
-        </div>
-
-        <!-- Back to Top Button -->
-        <div class="back-to-top hidden" id="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </div>
-
         <!-- Header -->
         <header class="fixed w-full bg-gray-800 shadow-sm z-50">
             <div
                 class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#"
-                    class="text-2xl font-bold gradient-text">Rifqi Fachriza</a>
+                <a href="#" class="text-2xl font-bold gradient-text">Rifqi
+                    Fachriza</a>
                 <nav class="hidden md:flex space-x-8">
                     <a href="#home"
                         class="text-gray-300 hover:text-blue-400 transition">Home</a>
@@ -95,15 +78,13 @@
                         class="text-4xl md:text-5xl font-bold text-gray-100 mb-4">Hi,
                         I'm <span class="gradient-text">Rifqi
                             Fachriza</span></h1>
-                    <h2
-                        class="text-2xl md:text-3xl text-blue-400 mb-6">Backend
+                    <h2 class="text-2xl md:text-3xl text-blue-400 mb-6">Backend
                         Developer & Technophile</h2>
                     <p class="text-gray-400 mb-8 max-w-lg">Final-year
                         Informatics student at National Institute of Technology
                         Bandung, skilled in cybersecurity and IoT. Focused on
-                        mastering penetration
-                        testing and backend development to solve real-world
-                        problems.</p>
+                        mastering penetration testing and backend development to
+                        solve real-world problems.</p>
                     <div
                         class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="#projects-tab"
@@ -124,8 +105,7 @@
                             class="relative rounded-full w-full h-full bg-gray-700 border-4 border-gray-800 shadow-xl floating overflow-hidden">
                             <img src="img/RifqiVectorized.webp"
                                 alt="Profile Photo"
-                                class="profile-photo">
-                            class="w-full h-full object-cover">
+                                class="profile-photo w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -966,9 +946,9 @@
                                 <h3
                                     class="text-xl font-bold text-gray-100 mb-4">What
                                     I Bring</h3>
-                                <p class="text-gray-400 mb-6">Let’s
-                                    collaborate to build secure systems or
-                                    tackle real-world tech challenges!</p>
+                                <p class="text-gray-400 mb-6">Let’s collaborate
+                                    to build secure systems or tackle real-world
+                                    tech challenges!</p>
                                 <a href="https://github.com/Mysteriza"
                                     target="_blank"
                                     class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md inline-flex items-center">
@@ -986,10 +966,13 @@
             <div class="container mx-auto text-center">
                 <p class="mt-2">© <span id="current-year"></span> Mysteriza. All
                     rights reserved.</p>
-                <p class="mt-2 text-xs">Built with security in mind</p>
             </div>
         </footer>
 
         <script src="script.js"></script>
+
+        <button id="back-to-top" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </body>
 </html>
