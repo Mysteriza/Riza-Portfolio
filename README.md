@@ -1,17 +1,11 @@
-# 💼 Responsive Mini Portfolio
+# Mysteriza Portfolio Website
 
-## [My Portfolio](https://www.mysteriza.my.id/)
+## About the Website
+This website serves as a digital portfolio for Mysteriza, highlighting a variety of projects in IoT, cybersecurity, and web development. It also features a skills section covering backend development and cybersecurity expertise, alongside certifications from platforms like Cisco and Fortinet.
 
-## [Watch it on YouTube for more information](https://youtu.be/mq0xJxOTiYo)
-
-### 💼 Responsive Mini Portfolio
-
-- Responsive mini portfolio website Using HTML CSS & JavaScript
-- Contains animations CSS.
-- Includes light mode and dark mode.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
-
-![preview img](/preview.png)
-
-
+## Built With
+- **HTML5 & CSS3**: For structure and styling.
+- **JavaScript**: For interactivity, including mobile menu, tab switching, and smooth scrolling.
+- **Font Awesome**: For icons to enhance the visual appeal.
+- **Cloudflare**: For CDN, security, and performance optimization.
+- **Vercel**: For hosting and deployment.
